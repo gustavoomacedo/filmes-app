@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFilmes.Views.AddFilmePage">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <Label Text="Nome" />
+            <Entry Text="{Binding Nome}" />
+            <Label Text="Diretor" />
+            <Entry Text="{Binding Diretor}" />
+            <Label Text="Estrelas" />
+            <Entry Text="{Binding Estrelas}" Keyboard="Numeric" />
+            <Button Command="{Binding SalvarCommand}" Text="Salvar" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
